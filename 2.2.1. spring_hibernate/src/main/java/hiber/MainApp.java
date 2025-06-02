@@ -23,6 +23,7 @@ public class MainApp {
 
       userService.add(new User("User5", "Lastname5", "user5@mail.ru", new Car("Opel", 3)));
       userService.add(new User("User6", "Lastname6", "user6@mail.ru", new Car("Audi", 7)));
+      userService.add(new User("User7", "Lastname7", "user7@mail.ru", new Car("Audi", 7)));
 
 //      List<User> users = userService.listUsers();
 //      for (User user : users) {
@@ -33,7 +34,7 @@ public class MainApp {
 //         System.out.println();
 //      }
 
-      User user = userService.getByCar("Haval", 7);
+      User user = userService.getByCar("Audi", 7);
       if (user != null) {
          System.out.println("Id = " + user.getId());
          System.out.println("First Name = " + user.getFirstName());
