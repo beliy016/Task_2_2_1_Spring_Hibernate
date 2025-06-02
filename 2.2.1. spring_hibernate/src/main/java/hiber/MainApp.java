@@ -33,7 +33,7 @@ public class MainApp {
 //         System.out.println();
 //      }
 
-      User user = userService.getUser("Audi", 7);
+      User user = userService.getByCar("Audi", 7);
       System.out.println("Id = "+user.getId());
       System.out.println("First Name = "+user.getFirstName());
       System.out.println("Last Name = "+user.getLastName());
